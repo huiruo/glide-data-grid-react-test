@@ -3,11 +3,14 @@ import React from 'react';
 import { cx } from '@linaria/core';
 import { css } from '@linaria/atomic';
 import { styled } from '@linaria/react';
+import { AddRemoveColumns } from './pages/addRemoveColumns/index'
+import "@glideapps/glide-data-grid/dist/index.css";
 
 const App = () => {
   return (
     <>
-      <h1 className={eleStyle}>
+      <AddRemoveColumns />
+      {/* <h1 className={eleStyle}>
         Hello React <span>world!</span>
       </h1>
 
@@ -17,7 +20,7 @@ const App = () => {
 
       <Button primary>click me</Button>
       <FancyButton>Another button</FancyButton>
-      <FancyButton success>Success</FancyButton>
+      <FancyButton success>Success</FancyButton> */}
     </>
   );
 };
