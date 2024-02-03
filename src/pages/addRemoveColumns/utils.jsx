@@ -10,6 +10,7 @@ import { styled } from "@linaria/react";
 import isArray from "lodash/isArray.js";
 import { assertNever } from "./support";
 import noop from "lodash/noop.js";
+import { useResizeDetector } from "react-resize-detector";
 
 // faker.seed(1337);
 
@@ -775,3 +776,29 @@ export function useAllMockedKinds() {
 
   return { cols, getCellContent, onColumnResize, setCellValue };
 }
+
+
+export const BeautifulWrapper = p => {
+  const { title, children, description, className, scale } = p;
+
+  const { ref, width, height } = useResizeDetector();
+
+  return (
+      <BeautifulStyle className={className}>
+          <h1>{title}</h1>
+          {description}
+          <div style={{ scale }} className="sizer">
+              <div className="sizer-clip" ref={ref}>
+                  <div
+                      style={{
+                          position: "relative",
+                          width: width ?? 100,
+                          height: height ?? 100,
+                      }}>
+                      {children}
+                  </div>
+              </div>
+          </div>
+      </BeautifulStyle>
+  );
+};
