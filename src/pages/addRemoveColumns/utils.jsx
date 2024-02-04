@@ -366,7 +366,7 @@ function getResizableColumns(amount, group) {
       },
     },
     {
-      title: "More Info",
+      title: "More Info B",
       id: "More Info",
       group: group ? "Info" : undefined,
       icon: GridColumnIcon.HeaderUri,
@@ -374,6 +374,7 @@ function getResizableColumns(amount, group) {
       getContent: () => {
         const url = faker.internet.url();
         return {
+          // kind: GridCellKind.Uri,
           kind: GridCellKind.Uri,
           displayData: url,
           data: url,
@@ -650,7 +651,7 @@ function getColumnsForCellTypes() {
       },
     },
     {
-      title: "Uri",
+      title: "Uri-test",
       width: 120,
       icon: GridColumnIcon.HeaderUri,
       hasMenu: false,
@@ -717,7 +718,7 @@ Hello my name is *${faker.person.firstName()}`;
 }
 
 export function useAllMockedKinds() {
-  const cache = React.useRef < ContentCache > (new ContentCache());
+  const cache = React.useRef(new ContentCache());
 
   const [colsMap, setColsMap] = React.useState(getColumnsForCellTypes);
 

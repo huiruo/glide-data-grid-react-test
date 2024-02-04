@@ -34,14 +34,14 @@ export const AddColumns2 = (p) => {
           </>
         }
       >
-        {/* <Story /> */}
         <DataEditor
           {...defaultProps}
-          rowMarkers="number"
+          // rowMarkers="number"
           getCellContent={getCellContent}
-          experimental={{ strict: true }}
+          // experimental={{ strict: true }}
           columns={cols}
-          rows={10}
+          rows={2}
+          columnsCount={10}
         />
       </BeautifulWrapper>
     </SimpleThemeWrapper>

@@ -1,7 +1,8 @@
 import React from "react";
 import DataEditor from "@glideapps/glide-data-grid";
 import {
-  useMockDataGenerator,
+  useMockDataGenerator, 
+  useAllMockedKinds,
   BeautifulWrapper,
   Description,
   MoreInfo,
@@ -18,7 +19,8 @@ const defaultProps = {
 };
 
 export const AddColumns = (p) => {
-  const { cols, getCellContent } = useMockDataGenerator(p.columnsCount);
+//   const { cols, getCellContent } = useMockDataGenerator(p.columnsCount);
+  const { cols, getCellContent, onColumnResize, setCellValue } = useAllMockedKinds();
   const ref = React.useRef(null);
 
   const onClick = React.useCallback(() => {

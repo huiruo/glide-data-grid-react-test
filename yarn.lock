@@ -1429,22 +1429,24 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.1.tgz#16308cea045f0fc777b6ff20a9f25474dd8293d2"
   integrity sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==
 
-"@glideapps/glide-data-grid-cells@^5.3.2":
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/@glideapps/glide-data-grid-cells/-/glide-data-grid-cells-5.3.2.tgz#01fd91a08e860c33fb4faab421bbb975b727ccab"
-  integrity sha512-8ZT2iA4Kd9n0kh7UmHIMdDLoSZ9chY7l7cDD9h5dEcSKCRigogFUlTQNXXAH9MSQumHO/DUCkNc/+wKKPjWvcg==
+"@glideapps/glide-data-grid-cells@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@glideapps/glide-data-grid-cells/-/glide-data-grid-cells-6.0.3.tgz#0d291e25e73db30caf3db90c5db1cc7e0f2fce2c"
+  integrity sha512-SOZ+zlXAqSEACyZ26w41O2y0tr5qhJnxYOu9W327L23+Z2Sz0xpyiP8FQOZx1mzdyXLO9eBqQIv9ByDTftLIIA==
   dependencies:
-    "@glideapps/glide-data-grid" "5.3.2"
+    "@glideapps/glide-data-grid" "6.0.3"
+    "@linaria/react" "^4.5.3"
     "@toast-ui/editor" "3.1.10"
     "@toast-ui/react-editor" "3.1.10"
-    react-select "^5.2.2"
+    react-select "^5.8.0"
 
-"@glideapps/glide-data-grid@5.3.2", "@glideapps/glide-data-grid@^5.3.2":
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/@glideapps/glide-data-grid/-/glide-data-grid-5.3.2.tgz#73d2f7e94436a58d694675eae2d5eb213f63e4b2"
-  integrity sha512-DkAqvPFMCLYtpcGTRnZcY31u5SqHnDxgeGE8UZuXpXQiHE4yPhUkcNfxp/dcsGiVHr+TXP8RujyGHUDDmmpFlw==
+"@glideapps/glide-data-grid@6.0.3", "@glideapps/glide-data-grid@^6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@glideapps/glide-data-grid/-/glide-data-grid-6.0.3.tgz#dfb5b82e690f999a62b825fb52c9fce891946524"
+  integrity sha512-YXKggiNOaEemf0jP0jORq2EQKz+zXms+6mGzZc+q0mLMjmgzzoGLOQC1uYcynXSj1R61bd27JcPFsoH+Gj37Vg==
   dependencies:
-    canvas-hypertxt "^0.0.7"
+    "@linaria/react" "^4.5.3"
+    canvas-hypertxt "^1.0.3"
     react-number-format "^5.0.0"
 
 "@humanwhocodes/config-array@^0.11.13":
@@ -1827,7 +1829,7 @@
     debug "^4.1.1"
     picocolors "^1.0.0"
 
-"@linaria/react@^4.1.2", "@linaria/react@^4.5.4":
+"@linaria/react@^4.1.2", "@linaria/react@^4.5.3", "@linaria/react@^4.5.4":
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/@linaria/react/-/react-4.5.4.tgz#4d53e357bbecae2e8d388ae9288865eda703a2f7"
   integrity sha512-/dhCVCsfdGPfQCPV0q5yy+DDlFXepvfXrw/os2fC+Xo1v9J/9gyiaBBWHzcumauvNNFj8aN6vRkj89fMujPHew==
@@ -3484,10 +3486,10 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001578, caniuse-lite@^1.0.30001580:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001583.tgz#abb2970cc370801dc7e27bf290509dc132cfa390"
   integrity sha512-acWTYaha8xfhA/Du/z4sNZjHUWjkiuoAi2LM+T/aL+kemKQgPT1xBb/YKjlQ0Qo8gvbHsGNplrEJ+9G3gL7i4Q==
 
-canvas-hypertxt@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/canvas-hypertxt/-/canvas-hypertxt-0.0.7.tgz#7daf5419e39fc75342d5e2569911eb8098cce11c"
-  integrity sha512-XPXJvvaEQddHl0KaDdnnEowcCiYiL2gJz4M8ANK1GvZPcZimgvjRubnChtUospZWFSiNJtE06VkLnQs2vve5tQ==
+canvas-hypertxt@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/canvas-hypertxt/-/canvas-hypertxt-1.0.3.tgz#b0a33d53206b7de417bae3d92b93fa77ba9245c2"
+  integrity sha512-+VsMpRr64jYgKq2IeFUNel3vCZH/IzS+iXSHxmUV3IUH5dXlC9xHz4AwtPZisDxZ5MWcuK0V+TXgPKFPiZnxzg==
 
 case-sensitive-paths-webpack-plugin@^2.4.0:
   version "2.4.0"
@@ -8576,7 +8578,7 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react-select@^5.2.2:
+react-select@^5.8.0:
   version "5.8.0"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-5.8.0.tgz#bd5c467a4df223f079dd720be9498076a3f085b5"
   integrity sha512-TfjLDo58XrhP6VG5M/Mi56Us0Yt8X7xD6cDybC7yoRMUNm7BGO7qk8J0TLQOua/prb8vUOtsfnXZwfm30HGsAA==
